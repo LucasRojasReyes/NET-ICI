@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva Ingeniería Civil Informática – Universidad de Valparaíso</title>
+  <meta name="description" content="Explora la malla curricular interactiva de Ingeniería Civil Informática en la Universidad de Valparaíso. Descubre requisitos por semestre y desbloquea ramos al aprobar.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <h1>Ingeniería Civil Informática UV</h1>
+  <div class="malla-grid">
+    <div class="semestre" id="sem1">
+      <h2>1° Semestre</h2>
+      <div class="ramo" id="fundamentos_matematicas" onclick="aprobar('fundamentos_matematicas')">Fundamentos de Matemáticas</div>
+      <div class="ramo" id="algebra" onclick="aprobar('algebra')">Álgebra</div>
+      <div class="ramo" id="quimica_general" onclick="aprobar('quimica_general')">Química General</div>
+      <div class="ramo" id="desarrollo_personal1" onclick="aprobar('desarrollo_personal1')">Desarrollo Personal I</div>
+      <div class="ramo" id="introduccion_ingenieria_informatica" onclick="aprobar('introduccion_ingenieria_informatica')">Introducción a la Ingeniería Informática</div>
+      <div class="ramo" id="fundamentos_programacion" onclick="aprobar('fundamentos_programacion')">Fundamentos de Programación</div>
+    </div>
+
+    <div class="semestre" id="sem2">
+      <h2>2° Semestre</h2>
+      <div class="ramo bloqueado" id="calculo_diferencial" onclick="aprobar('calculo_diferencial')">Cálculo Diferencial</div>
+      <div class="ramo bloqueado" id="algebra_lineal" onclick="aprobar('algebra_lineal')">Álgebra Lineal</div>
+      <div class="ramo" id="fundamentos_fisica" onclick="aprobar('fundamentos_fisica')">Fundamentos de Física</div>
+      <div class="ramo bloqueado" id="desarrollo_personal2" onclick="aprobar('desarrollo_personal2')">Desarrollo Personal II</div>
+      <div class="ramo bloqueado" id="programacion1" onclick="aprobar('programacion1')">Programación I</div>
+    </div>
+
+    <div class="semestre" id="sem3">
+      <h2>3° Semestre</h2>
+      <div class="ramo bloqueado" id="calculo_integral" onclick="aprobar('calculo_integral')">Cálculo Integral</div>
+      <div class="ramo bloqueado" id="fisica_mecanica" onclick="aprobar('fisica_mecanica')">Física Mecánica</div>
+      <div class="ramo bloqueado" id="ingles1" onclick="aprobar('ingles1')">Inglés I</div>
+      <div class="ramo bloqueado" id="programacion2" onclick="aprobar('programacion2')">Programación II</div>
+      <div class="ramo bloqueado" id="hardware_digital" onclick="aprobar('hardware_digital')">Hardware Digital</div>
+    </div>
+
+    <div class="semestre" id="sem4">
+      <h2>4° Semestre</h2>
+      <div class="ramo bloqueado" id="calculo_varias_variables" onclick="aprobar('calculo_varias_variables')">Cálculo en Varias Variables</div>
+      <div class="ramo bloqueado" id="ecuaciones_diferenciales" onclick="aprobar('ecuaciones_diferenciales')">Ecuaciones Diferenciales</div>
+      <div class="ramo bloqueado" id="fisica_calor_ondas" onclick="aprobar('fisica_calor_ondas')">Física Calor, Ondas y Óptica</div>
+      <div class="ramo bloqueado" id="redes_computadores1" onclick="aprobar('redes_computadores1')">Redes de Computadores I</div>
+      <div class="ramo bloqueado" id="matematicas_discretas" onclick="aprobar('matematicas_discretas')">Matemáticas Discretas</div>
+      <div class="ramo bloqueado" id="tipe1" onclick="aprobar('tipe1')">TIPE I</div>
+    </div>
+    
+    <div class="semestre" id="sem5">
+      <h2>5° Semestre</h2>
+      <div class="ramo bloqueado" id="fisica_electromagnetismo" onclick="aprobar('fisica_electromagnetismo')">Física Electromagnetismo</div>
+      <div class="ramo bloqueado" id="ingles2" onclick="aprobar('ingles2')">Inglés II</div>
+      <div class="ramo bloqueado" id="estructuras_datos" onclick="aprobar('estructuras_datos')">Estructuras de Datos</div>
+      <div class="ramo bloqueado" id="arquitectura_computadores" onclick="aprobar('arquitectura_computadores')">Arquitectura de Computadores</div>
+      <div class="ramo bloqueado" id="bases_datos1" onclick="aprobar('bases_datos1')">Bases de Datos I</div>
+      <div class="ramo bloqueado" id="fundamentos_ingenieria_sw" onclick="aprobar('fundamentos_ingenieria_sw')">Fundamentos de Ingeniería de SW</div>
+      <div class="ramo bloqueado" id="laboratorio_redes" onclick="aprobar('laboratorio_redes')">Laboratorio de Redes</div>
+    </div>
+
+    <div class="semestre" id="sem6">
+      <h2>6° Semestre</h2>
+      <div class="ramo bloqueado" id="ingles3" onclick="aprobar('ingles3')">Inglés III</div>
+      <div class="ramo bloqueado" id="analisis_diseno_algoritmos" onclick="aprobar('analisis_diseno_algoritmos')">Análisis y Diseño de Algoritmos</div>
+      <div class="ramo bloqueado" id="sistemas_operativos" onclick="aprobar('sistemas_operativos')">Sistemas Operativos</div>
+      <div class="ramo bloqueado" id="bases_datos_programacion_web" onclick="aprobar('bases_datos_programacion_web')">Bases de Datos y Programación Web</div>
+      <div class="ramo bloqueado" id="metodologia_analisis" onclick="aprobar('metodologia_analisis')">Metodología de Análisis</div>
+      <div class="ramo bloqueado" id="interaccion_persona_computador" onclick="aprobar('interaccion_persona_computador')">Interacción Persona Computador</div>
+      <div class="ramo bloqueado" id="tipe2" onclick="aprobar('tipe2')">TIPE II</div>
+    </div>
+
+    <div class="semestre" id="sem7">
+      <h2>7° Semestre</h2>
+      <div class="ramo bloqueado" id="ingles4" onclick="aprobar('ingles4')">Inglés IV</div>
+      <div class="ramo bloqueado" id="probabilidades_y_estadisticas" onclick="aprobar('probabilidades_y_estadisticas')">Probabilidades y Estadísticas</div>
+      <div class="ramo bloqueado" id="lenguajes_y_automatas" onclick="aprobar('lenguajes_y_automatas')">Lenguajes y Autómatas</div>
+      <div class="ramo bloqueado" id="metodologia_de_diseño" onclick="aprobar('metodologia_de_diseño')">Metodología de Diseño</div>
+      <div class="ramo bloqueado" id="sistemas_de_información" onclick="aprobar('sistemas_de_información')">Sistemas de Información</div>
+      <div class="ramo bloqueado" id="bases_de_datos2" onclick="aprobar('bases_de_datos2')">Bases de Datos II</div>
+      <div class="ramo bloqueado" id="tipe3" onclick="aprobar('tipe3')">TIPE III</div>
+    </div>
+
+    <div class="semestre" id="sem8">
+      <h2>8° Semestre</h2>
+      <div class="ramo bloqueado" id="innovacion_y_emprendimiento" onclick="aprobar('innovacion_y_emprendimiento')">Innovación y Emprendimiento</div>
+      <div class="ramo bloqueado" id="etica_y_legislacion" onclick="aprobar('etica_y_legislacion')">Ética y Legislación</div>
+      <div class="ramo bloqueado" id="pruebas_de_sistemas" onclick="aprobar('pruebas_de_sistemas')">Pruebas de Sistemas</div>
+      <div class="ramo bloqueado" id="redes_de_computadores2" onclick="aprobar('redes_de_computadores2')">Redes de Computadores II</div>
+      <div class="ramo bloqueado" id="lenguajes_de_programacion" onclick="aprobar('lenguajes_de_programacion')">Lenguajes de Programación</div>
+      <div class="ramo bloqueado" id="bases_de_datos3" onclick="aprobar('bases_de_datos3')">Bases de Datos III</div>
+      <div class="ramo bloqueado" id="taller_de_integracion_tecnologica1" onclick="aprobar('taller_de_integracion_tecnologica1')">Taller de Integración Tecnológica I</div>
+    </div>
+
+    <div class="semestre" id="sem9">
+      <h2>9° Semestre</h2>
+      <div class="ramo bloqueado" id="administracion_general" onclick="aprobar('administracion_general')">Administración General</div>
+      <div class="ramo bloqueado" id="contabilidad_y_finanzas" onclick="aprobar('contabilidad_y_finanzas')">Contabilidad y Finanzas</div>
+      <div class="ramo bloqueado" id="gestion_de_proyectos_informaticos" onclick="aprobar('gestion_de_proyectos_informaticos')">Gestión de Proyectos Informáticos</div>
+      <div class="ramo bloqueado" id="optimizacion_computacional" onclick="aprobar('optimizacion_computacional')">Optimización Computacional</div>
+      <div class="ramo bloqueado" id="simulacion" onclick="aprobar('simulacion')">Simulación</div>
+      <div class="ramo bloqueado" id="seguridad_de_sistemas" onclick="aprobar('seguridad_de_sistemas')">Seguridad de Sistemas</div>
+      <div class="ramo bloqueado" id="electivo_profesional1" onclick="aprobar('electivo_profesional1')">Electivo Profesional I</div>
+    </div>
+
+    <div class="semestre" id="sem10">
+      <h2>10° Semestre</h2>
+      <div class="ramo bloqueado" id="evaluacion_de_proyectos" onclick="aprobar('evaluacion_de_proyectos')">Evaluación de Proyectos</div>
+      <div class="ramo bloqueado" id="economia" onclick="aprobar('economia')">Economía</div>
+      <div class="ramo bloqueado" id="inteligencia_de_negocios" onclick="aprobar('inteligencia_de_negocios')">Inteligencia de Negocios</div>
+      <div class="ramo bloqueado" id="electivo_profesional2" onclick="aprobar('electivo_profesional2')">Electivo Profesional II</div>
+      <div class="ramo bloqueado" id="electivo_profesional3" onclick="aprobar('electivo_profesional3')">Electivo Profesional III</div>
+      <div class="ramo bloqueado" id="taller_de_integracion_tecnologica2" onclick="aprobar('taller_de_integracion_tecnologica2')">Taller de Integración Tecnológica II</div>
+    </div>
+
+    <div class="semestre" id="sem11">
+      <h2>11° Semestre</h2>
+      <div class="ramo bloqueado" id="seminario_de_titulo1" onclick="aprobar('seminario_de_titulo1')">Seminario de Título I</div>
+      <div class="ramo bloqueado" id="electivo_profesional4" onclick="aprobar('electivo_profesional4')">Electivo Profesional IV</div>
+    </div>
+
+    <div class="semestre" id="sem12">
+      <h2>12° Semestre</h2>
+      <div class="ramo bloqueado" id="seminario_de_titulo2" onclick="aprobar('seminario_de_titulo2')">Seminario de Título II</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <style>
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #c2185b;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  </style>
+</body>
+</html>
